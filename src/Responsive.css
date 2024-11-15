@@ -1,0 +1,60 @@
+/* Home */
+@media screen and (width<1200px) {
+    .hero-img {
+        padding-block: 25px;
+        height: fit-content;
+    }
+
+    .hero-img img {
+        width: 200px;
+    }
+}
+
+@media screen and (width<850px) {
+    .hero-img {
+        padding-block: 20px;
+    }
+
+    .hero-img img {
+        width: 150px;
+    }
+
+    .section {
+        padding-left: 0;
+    }
+
+    .sidebar {
+        width: 100%;
+        left: -100%;
+    }
+
+    .side-hidden {
+        left: 0
+    }
+
+    .logo {
+        top: 50px;
+    }
+    .add-side{
+        display: block !important;
+    }
+}
+
+@media screen and (width<600px) {
+    .hero-img {
+        display: none;
+    }
+
+    .main-content {
+        flex: 0 0 100%;
+    }
+
+    .main-head {
+        font-size: 30px;
+    }
+
+    .btn1 {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
