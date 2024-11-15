@@ -12,6 +12,7 @@ export default function About() {
     let barStyle = !sidebar ? "add-side" : "add-side d-none";
     useEffect(() => {
         dispatch(beActive("about"))
+        
     })
     return (
         <>

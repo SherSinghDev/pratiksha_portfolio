@@ -8,6 +8,11 @@ export default function Sidebar() {
     const menu = useSelector((state) => state.menu)
     const dispatch = useDispatch()
     let sideClass = !sidebar ? "sidebar side-hidden" : 'sidebar';
+    function trickySidebar() {
+        if (window.innerWidth < 850) {
+            dispatch(close())
+        }
+    }
     return (
         <>
             <div className={sideClass}>
@@ -21,7 +26,8 @@ export default function Sidebar() {
                     <li>
                         <NavLink name="home"
                             className={(menu == "home") ? "active" : ''}
-                            to="/">
+                            to="/"
+                            onClick={trickySidebar}>
                             <i className="fa-solid fa-house"></i>
                             Home
                         </NavLink>
@@ -29,7 +35,8 @@ export default function Sidebar() {
                     <li>
                         <NavLink name="about"
                             className={(menu == "about") ? "active" : ''}
-                            to="/about">
+                            to="/about"
+                            onClick={trickySidebar}>
                             <i className="fa-solid fa-user"></i>
                             About
                         </NavLink>
@@ -37,7 +44,8 @@ export default function Sidebar() {
                     <li>
                         <NavLink name="service"
                             className={(menu == "services") ? "active" : ''}
-                            to="/services">
+                            to="/services"
+                            onClick={trickySidebar}>
                             <i className="fa-solid fa-list"></i>
                             Services
                         </NavLink>
@@ -53,7 +61,8 @@ export default function Sidebar() {
                     <li>
                         <NavLink name="contact"
                             className={(menu == "contact") ? "active" : ''}
-                            to="/contact">
+                            to="/contact"
+                            onClick={trickySidebar}>
                             <i className="fa-solid fa-comments"></i>
                             Contact Me
                         </NavLink>
