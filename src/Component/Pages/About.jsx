@@ -29,7 +29,7 @@ export default function About() {
                                 <div className="row">
                                     <div className="col-md-6">
                                         <p><b>Birthday :</b> <span className="para">12 May 2004</span></p>
-                                        <p><b>Website :</b> <span className="para"><a href="https://portfolio-shersinghdev.netlify.app">Visit</a></span></p>
+                                        <p><b>Website :</b> <span className="para"><a href="https://pratiksha-thakur-portfoliosite.netlify.app/">Visit</a></span></p>
                                         <p><b>Degree :</b> <span className="para">B.A</span></p>
                                         <p><b>City :</b> <span className="para">Sadabad, Mathura</span></p>
                                     </div>
