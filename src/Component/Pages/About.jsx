@@ -102,7 +102,7 @@ export default function About() {
                             <div className="col-md-6">
                                 <h2 className="main-head">Experience</h2>
                                 <div className="achieve-box">
-                                    <p className="para dot">2013-2024</p>
+                                    <p className="para dot">2023-2024</p>
                                     <div className="sec-head">Intern in Technosters</div>
                                     <p className="para mb-5">I am currently Doing an internship from Technosters IT Company.Here I am working on MERN Technology an gainig knowledge day by day. I am Enhancing my skills of React JS, Node JS, Jquery, Javascript,CSS and HTML. </p>
                                 </div>
